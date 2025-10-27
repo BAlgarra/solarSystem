@@ -1,8 +1,22 @@
-/* body {
-    text-align: center;
-} */
 
 body{
 
     height: 70vh;
+}
+
+.mainSection {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer{
+    height: 15vh; 
+    background-color: black; 
+    color: white; 
+}
+h1{
+    color: white;
+    text-align: center;
+   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }

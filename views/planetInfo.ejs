@@ -5,7 +5,8 @@
   <%- include("partials/head.ejs") %>
 </head>
 
-<body>
+<body style="display: flex; flex-direction: column;">
+    <div class="mainSection">
     <h1 class="text-center bg-primary p-5 text-white m-0">The Solar System</h1>
 
     <%- include("partials/navbar.ejs") %>
@@ -14,18 +15,24 @@
         <h2>
             <%=planet_name%>
         </h2>
+        <div style="display: flex;flex-direction: row;">
+            <div style="display: flex; flex-direction: column; width: 60vw;">
         <p>Description: <%=planetInfo.description%></p>
-            <br>
-            <img src="<%=planetInfo.image%>" width="300">
-            
+            <br>          
             <p>Distance from sun: <%=planetInfo.distanceFromSun%></p>  
             <p>Year Length: <%=planetInfo.yearLength%></p>
             <p>One Earth Day: <%=planetInfo.oneEarthDay%></p>
             <p>Radius: <%=planetInfo.radius%></p>
             <p>Website Link: <%=planetInfo.websiteLink%></p>
-            <p>Moons: <%=planetInfo.moons%></p>            
+            <p>Moons: <%=planetInfo.moons%></p> 
+            </div>    
+            <div style="width: 40vw;">
+            <img src="<%=planetInfo.image%>" width="80%" height="auto">
+            </div>
+            </div>
 
             <%- include("partials/footer.ejs") %>
+    </div>
 
 </body>
 

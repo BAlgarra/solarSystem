@@ -5,13 +5,15 @@
    <%- include("partials/head.ejs") %>
 </head>
 
-<body>
+<body class="mainSection">
 
     <h1 class="text-center bg-primary p-5 text-white m-0">The Solar System</h1>
     
     <%- include("partials/navbar.ejs") %>
     <!-- <%- include("partials/dropdownNav.ejs") %> -->
-<img src= "<%= randomImage%>" width="300">
+     <div style="display: flex; height: 60vh; justify-content: center;">
+<img src= "<%= randomImage%>" width="auto" height="80%">
+     </div>
    
  <%- include("partials/footer.ejs") %>
 </body>

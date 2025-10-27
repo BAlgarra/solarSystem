@@ -5,15 +5,22 @@
     <%- include("partials/head.ejs") %>
 </head>
 
-<body>
+<body class="mainSection">
     <h1 class="text-center bg-primary p-5 text-white m-0">The Solar System</h1>
     <%- include("partials/navbar.ejs") %>
     <!-- <%- include("partials/dropdownNav.ejs") %> -->
 
+<div style="height: 60vh;">
     <h2> <%=nonplanet_name%> </h2>
+    <div style="display: flex; flex-direction: row;">
+        <div style="width: 60%;">
     <%=nonplanetInfo.def%>
-    <br>
-    <img src="<%=nonplanetInfo.image%>" width="300">
+    </div>
+    <div style="width: 40%;">
+    <img src="<%=nonplanetInfo.image%>" width="80%" height="auto">
+    </div>
+    </div>  
+    </div>
 <%- include("partials/footer.ejs") %>
 </body>
 
